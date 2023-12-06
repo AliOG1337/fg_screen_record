@@ -3,7 +3,7 @@ Fiveguard Screenshot and Record Screen Command with ACE Perms
 
 ### Changes about fix 
 Fixxed this Error
-![grafik]([[https://github.com/UnrealMexd0x/fg_screen_record/assets/118627448/07d4c095-79a9-4e3f-b755-69d19f045c0f](https://media.discordapp.net/attachments/1107031126897332345/1182035092487553064/image.png)](https://i.imgur.com/jmRwlrd.png))
+![grafik]((https://i.imgur.com/jmRwlrd.png))
 
 Credits: https://github.com/UnrealMexd0x
 Fixxed by AliOG1337
