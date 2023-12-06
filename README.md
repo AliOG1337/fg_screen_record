@@ -1,5 +1,5 @@
 # fg_screen_record
-Fiveguard Screenshot and Record Screen Command with ACE Perms
+Fiveguard Screenshot and Record Screen Command with Group Perms
 
 ### Changes about fix 
 - Added Groups in Config for ESX
