@@ -40,9 +40,7 @@ Fixxed by AliOG1337
 ### Configuration (Config.lua)
 
 - `Config.RecordCommand`: The command for initiating screen recording.
-- `Config.RecordCommandAce`: The ACE permission required to use the record command.
 - `Config.ScreenCommand`: The command for capturing a screenshot.
-- `Config.ScreenCommandAce`: The ACE permission required to use the screenshot command.
 
 ### Notes
 
