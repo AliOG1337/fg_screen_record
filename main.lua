@@ -1,15 +1,31 @@
 local AntiCheatName = Config.Anticheatname -- DONT TOUCH
 
+ESX = exports['es_extended']:getSharedObject()
+
 RegisterCommand(Config.RecordCommand, function(source, args)
     local playerSource, recordTime
+    local xPlayer = ESX.GetPlayerFromId(source)
 
     source = source
 
+    local allowedGroups = Config.AllowedGroups
+
     if source ~= 0 then
-        if IsPlayerAceAllowed(source, Config.RecordCommandAce) then
+        local playerGroup = xPlayer.getGroup()
+        local hasPermission = false
+
+        for _, group in pairs(allowedGroups) do
+            if playerGroup == group then
+                hasPermission = true
+                break
+            end
+        end
+
+        if hasPermission then
             playerSource = tonumber(args[1])
             recordTime = tonumber(args[2]) * 1000
         else
+            console("Du hast keine Berechtigung dafür")
             return
         end
     elseif source == 0 then
@@ -37,13 +53,27 @@ end)
 
 RegisterCommand(Config.ScreenCommand, function(source, args)
     local playerSource
-
+    local xPlayer = ESX.GetPlayerFromId(source)
+    
     source = source
 
+    local allowedGroups = Config.AllowedGroups
+
     if source ~= 0 then
-        if IsPlayerAceAllowed(source, Config.ScreenCommandAce) then
+        local playerGroup = xPlayer.getGroup()
+        local hasPermission = false
+
+        for _, group in pairs(allowedGroups) do
+            if playerGroup == group then
+                hasPermission = true
+                break
+            end
+        end
+
+        if hasPermission then
             playerSource = tonumber(args[1])
         else
+            console("Du hast keine Berechtigung dafür")
             return
         end
     elseif source == 0 then
