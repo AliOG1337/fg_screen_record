@@ -1,6 +1,9 @@
 # fg_screen_record
 Fiveguard Screenshot and Record Screen Command with ACE Perms
 
+Credits: https://github.com/UnrealMexd0x
+Fixxed by AliOG1337
+
 ### Commands
 
 #### 1. Record Command
